@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "text-classification"
+version = "0.1.0"
+description = "Study project"
+authors = ["eugeny <tiburon854@gmail.com>"]
+packages = [
+    {include = "keras_classification"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+keras = "^2.4.3"
+tensorflow = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+test = "keras_classification.classify:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
